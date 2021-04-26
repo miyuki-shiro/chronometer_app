@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+export DB_USER=thaimy DB_PASSWORD=qwe456 DB_NAME=test DB_HOST=localhost DB_PORT=5432
+
 echo "Installing dependencies"
 npm install
 
