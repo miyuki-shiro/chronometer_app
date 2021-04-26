@@ -1,0 +1,36 @@
+/* General style */
+body {
+  text-align: center; max-width: 600px; margin: 0 auto; background-color: #282c34;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: white;
+}
+header {
+  background-color: #181717; height: 10vh; display: flex; position: fixed;
+  align-items: center; justify-content: space-between; color: white; width: 100%;
+  top: 0; z-index: 10; padding: 10px; box-sizing: border-box; max-width: 600px;
+}
+header h1 { margin: 0px; }
+main { height: 90vh; padding-top: 10vh; background-color: rgb(40, 37, 53); }
+
+/* Chronometer style */
+.chrono-card { display: flex; flex-direction: column; justify-content: center; margin: 7vh 0vh; }
+.chrono-card h3 { margin-top: 0; font-size: xxx-large; }
+.chrono-card button {
+  border: none; color: white; text-align: center; text-decoration: none; padding: 10px;
+  display: inline-block; cursor: pointer; font-size: 1.25rem; font-weight: bold; outline: none;
+  background: #1e1e24; border-radius: 10px; margin: 10px; background: rgb(56, 56, 143);
+}
+.chrono-card button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Logs style */
+.logs-title {
+  background-color: #181717; height: 8vh; margin-top: 0; max-width: 728px;
+  color: white; width: 100%; padding: 10px; box-sizing: border-box;
+  display: flex; align-items: center; justify-content: center;
+}
+.logs-error { height: 36vh; display: flex; justify-content: center; align-items: center; width: 250px; margin: auto; }
+.logs-card { height: 36vh; overflow-y: scroll; display: grid; grid-template-columns: repeat(3, auto); align-content: start; }
+.logs-card::-webkit-scrollbar { width: 0.25rem; }
+.logs-card::-webkit-scrollbar-track { background: #1e1e24; }
+.logs-card::-webkit-scrollbar-thumb { background: #6649b8; }
