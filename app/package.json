@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "npm install && react-scripts test --coverage --verbose"
+    "test": "npm install && react-scripts test --coverage --verbose --watchAll=false"
   },
   "jest": {
     "coveragePathIgnorePatterns": [
